@@ -82,7 +82,7 @@ export const SearchPage = () => {
 
           {
             heroes.map( hero => (
-              <HeroCard id={ hero.id } { ...hero } />
+              <HeroCard key={ hero.id } { ...hero } />
             ))
           }
           
